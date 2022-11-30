@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="361.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController">
+   <children>
+      <Pane prefHeight="362.0" prefWidth="611.0">
+         <children>
+            <Label layoutX="38.0" layoutY="45.0" text="Bill" />
+            <Label layoutX="61.0" layoutY="163.0" text="Tip par personne :" />
+            <Label layoutX="400.0" layoutY="45.0" text="NB Personne" />
+            <TextField fx:id="txtBill" layoutX="71.0" layoutY="41.0" prefHeight="25.0" prefWidth="71.0" />
+            <TextField fx:id="txtPourcentage" layoutX="231.0" layoutY="41.0" prefHeight="25.0" prefWidth="87.0" />
+            <TextField fx:id="txtNbp" layoutX="481.0" layoutY="41.0" prefHeight="25.0" prefWidth="94.0" />
+            <Label layoutX="193.0" layoutY="45.0" text="Tip %" />
+            <Label fx:id="labTip" layoutX="168.0" layoutY="163.0" text="0" />
+            <Label layoutX="365.0" layoutY="163.0" text="Total par personne :" />
+            <Label fx:id="labTotal" layoutX="483.0" layoutY="163.0" text="0" />
+            <Button layoutX="168.0" layoutY="93.0" mnemonicParsing="false" onAction="#Calculate" prefHeight="49.0" prefWidth="251.0" text="Calculer" />
+            <Label fx:id="labErreur" layoutX="60.0" layoutY="219.0" text="." />
+            <DatePicker fx:id="datePickerDate" layoutX="87.0" layoutY="262.0" onAction="#initialisation" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
